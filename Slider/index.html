@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="author" content="Струков Вячеслав">
+	<title>My first simple slider</title>
+	<link media="all" rel="stylesheet" href="css/styles.css"/>
+
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+</head>
+	<body>
+
+	<div id="slider-container">
+		<ul id="slider">
+			<li><img src="img/slide1.jpg" alt=""></li>
+			<li><img src="img/slide2.jpg" alt=""></li>
+			<li><img src="img/slide3.jpg" alt=""></li>
+		</ul>
+		<a href="#" id="prev">prev</a>
+		<a href="#" id="next">next</a>
+	</div>
+
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+			slider({
+				container: '#slider-container',
+				width: 1000,
+				speed: 0.6,
+				height: 'auto',
+				scrolling: 'infinity',
+				effect: 'fade'
+			});
+		</script>
+
+	</body>
+</html>
